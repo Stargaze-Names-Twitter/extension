@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Stargaze Names @ Twitter",
+  "version": "0.1.0",
+  "description": "A Chromium/Safari extension for verifying Stargaze Name ownership on Twitter.",
+  "host_permissions": ["http://localhost:3000/*"],
+  "content_scripts": [
+    {
+      "js": ["background.js"],
+      "matches": ["https://twitter.com/*"]
+    }
+  ]
+}
